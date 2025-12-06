@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCL Pass | 康青龍無縫漫遊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">KCL <span>PASS</span></div>
+        <div style="font-size:0.9rem; color:#666;">2025.12.07 (日)</div>
+    </header>
+
+    <section class="intro-section">
+        <h3 class="section-title">街區功能指南</h3>
+        <div class="intro-grid">
+            <div class="intro-item">
+                <div class="intro-icon bg-yongkang">🎁</div>
+                <strong>永康街</strong>
+                <span class="intro-desc">午餐/伴手禮</span>
+            </div>
+            <div class="intro-item">
+                <div class="intro-icon bg-qingtian">🤲</div>
+                <strong>青田街</strong>
+                <span class="intro-desc">手作/導覽</span>
+            </div>
+            <div class="intro-item">
+                <div class="intro-icon bg-longquan">🍜</div>
+                <strong>龍泉街</strong>
+                <span class="intro-desc">早市/夜市</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="district-section">
+        <div class="district-header bg-yongkang text-dark">
+            <span>🎁 永康商圈精選優惠</span>
+            <small>剩餘 2 張可領</small>
+        </div>
+        <div class="section-body">
+            <div class="list-item">
+                <div class="item-info">
+                    <h4>鼎泰豐 (信義店)</h4>
+                    <span class="tag">伴手禮</span>
+                    <p>消費滿 $500 贈送小菜乙份</p>
+                </div>
+                <button class="btn-action bg-yongkang-dark" onclick="alert('已領取鼎泰豐優惠券！')">立即領取</button>
+            </div>
+            <div class="list-item">
+                <div class="item-info">
+                    <h4>思慕昔芒果冰</h4>
+                    <span class="tag">甜點</span>
+                    <p>憑證享全品項 9 折優惠</p>
+                </div>
+                <button class="btn-action bg-yongkang-dark" onclick="alert('已領取思慕昔優惠券！')">立即領取</button>
+            </div>
+            <div class="list-item disabled-item">
+                <div class="item-info">
+                    <h4>天津蔥抓餅</h4>
+                    <span class="tag">小吃</span>
+                    <p>加蛋免費 (每日限量 50 份)</p>
+                </div>
+                <button class="btn-action btn-disabled">已領完</button>
+            </div>
+        </div>
+        <button class="btn-footer" onclick="alert('打開我的優惠券夾 (永康區)')">📂 我的優惠券</button>
+    </section>
+
+    <section class="district-section">
+        <div class="district-header bg-qingtian">
+            <span>🤲 青田街手作與走讀</span>
+            <small>今日場次</small>
+        </div>
+        <div class="section-body">
+            <div class="list-item">
+                <div class="item-info">
+                    <h4>昭和町導覽：青田七六</h4>
+                    <span class="tag">導覽</span>
+                    <p>時間：14:00 - 15:30</p>
+                </div>
+                <button class="btn-action bg-qingtian-dark" onclick="alert('報名成功！')">立即報名</button>
+            </div>
+            <div class="list-item">
+                <div class="item-info">
+                    <h4>老屋植物標本製作</h4>
+                    <span class="tag">手作</span>
+                    <p>時間：15:30 - 17:00</p>
+                </div>
+                <button class="btn-action bg-qingtian-dark" onclick="alert('報名成功！')">立即報名</button>
+            </div>
+            <div class="list-item disabled-item">
+                <div class="item-info">
+                    <h4>瓦池水月：茶道體驗</h4>
+                    <span class="tag">體驗</span>
+                    <p>時間：16:00 - 17:30</p>
+                </div>
+                <button class="btn-action btn-disabled">已額滿</button>
+            </div>
+        </div>
+        <button class="btn-footer" onclick="alert('打開我的報名紀錄')">📅 我的報名</button>
+    </section>
+
+    <section class="district-section">
+        <div class="district-header bg-longquan">
+            <span>🍜 師大龍泉商圈</span>
+            <small>早市與夜市</small>
+        </div>
+        <div class="section-body">
+            
+            <h4 class="sub-title border-longquan">🥬 龍泉公有市場 (早市)</h4>
+            
+            <div class="market-status-box">
+                <strong>⚠️ 今日攤販公休資訊</strong>
+                <p>以下攤位今日休息，請勿撲空：</p>
+                <div class="closed-list">
+                    <span class="closed-tag">阿嬤蔬菜</span>
+                    <span class="closed-tag">龍泉製麵</span>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <h4 class="sub-title border-longquan">🌙 師大夜市優惠 (17:00後)</h4>
+
+            <div class="list-item">
+                <div class="item-info">
+                    <h4>師園鹽酥雞</h4>
+                    <span class="tag">夜市</span>
+                    <p>滿 $200 贈送酸梅湯一杯</p>
+                </div>
+                <button class="btn-action bg-longquan-dark" onclick="alert('已領取！')">立即領取</button>
+            </div>
+            <div class="list-item">
+                <div class="item-info">
+                    <h4>許記生煎包</h4>
+                    <span class="tag">夜市</span>
+                    <p>買 5 顆送 1 顆</p>
+                </div>
+                <button class="btn-action bg-longquan-dark" onclick="alert('已領取！')">立即領取</button>
+            </div>
+            <div class="list-item disabled-item">
+                <div class="item-info">
+                    <h4>燈籠滷味</h4>
+                    <span class="tag">夜市</span>
+                    <p>消費折抵 20 元</p>
+                </div>
+                <button class="btn-action btn-disabled">已領完</button>
+            </div>
+        </div>
+        <button class="btn-footer" onclick="alert('打開我的優惠券夾 (龍泉區)')">📂 我的優惠券</button>
+    </section>
+
+    <nav class="bottom-nav">
+        <div class="nav-item active">
+            <div>🏠</div>首頁
+        </div>
+        
+        <div class="nav-item">
+            <a href="map 康青龍.png" target="_blank">
+                <div>🗺️</div>地圖
+            </a>
+        </div>
+
+        <div class="nav-item" onclick="openModal('serviceModal')">
+            <div>💁</div>貼心服務
+        </div>
+
+        <div class="nav-item" onclick="openModal('memberModal')">
+            <div>👤</div>會員
+        </div>
+    </nav>
+
+    <div id="serviceModal" class="modal-overlay" onclick="closeModal('serviceModal')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <h3 class="modal-title">💁 貼心服務</h3>
+            <div class="service-grid">
+                <div class="service-btn" onclick="alert('已為您搜尋最近的友善廁所！')">
+                    <span class="service-icon">🚻</span>
+                    <strong>找廁所</strong>
+                </div>
+                <div class="service-btn" onclick="alert('啟動綠色絲帶 AR 導航...')">
+                    <span class="service-icon">🧭</span>
+                    <strong>AR 導航</strong>
+                </div>
+                <div class="service-btn" onclick="alert('目前龍泉夜市人流：舒適')">
+                    <span class="service-icon">📊</span>
+                    <strong>人流監測</strong>
+                </div>
+                <div class="service-btn" onclick="alert('已預約行李寄放！')">
+                    <span class="service-icon">🛅</span>
+                    <strong>行李寄放</strong>
+                </div>
+            </div>
+            <button class="close-btn" onclick="closeModal('serviceModal')">關閉</button>
+        </div>
+    </div>
+
+    <div id="memberModal" class="modal-overlay" onclick="closeModal('memberModal')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="member-card">
+                <div class="member-avatar">😎</div>
+                <h2 class="member-name">Ray大帥哥</h2>
+                <p class="member-level">KCL Pass 金卡會員</p>
+                
+                <div class="member-qr">
+                    <img src="memberQr1207.png" alt="Member QR Code">
+                </div>
+                
+                <p class="member-note">請出示此碼以使用優惠或簽到</p>
+            </div>
+            <button class="close-btn" onclick="closeModal('memberModal')">關閉</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
+</body>
+</html>

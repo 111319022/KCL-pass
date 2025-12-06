@@ -1,0 +1,297 @@
+/* --- 變數設定 (Color Palette) --- */
+:root {
+    --yongkang-yellow: #F4D03F;
+    --yongkang-dark: #D4AC0D;
+    --qingtian-green: #27AE60;
+    --qingtian-dark: #1E8449;
+    --longquan-red: #E74C3C;
+    --longquan-dark: #C0392B;
+    --dark-text: #2c3e50;
+    --light-bg: #f4f6f7;
+    --card-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* --- 全局基礎設定 --- */
+body {
+    font-family: "Helvetica Neue", Arial, "Heiti TC", "Microsoft JhengHei", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    padding-bottom: 90px; /* 避開底部導航 */
+}
+
+/* --- Header --- */
+header {
+    background: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo { font-weight: 800; font-size: 1.2rem; letter-spacing: 1px; }
+.logo span { color: var(--qingtian-green); }
+
+/* --- Intro Section --- */
+.intro-section {
+    background: white;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-title { margin: 0 0 10px 0; }
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.intro-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.intro-icon {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.intro-desc { color: #888; margin-top: 2px; }
+
+/* 背景色 Utility Classes */
+.bg-yongkang { background: var(--yongkang-yellow); }
+.bg-yongkang-dark { background: var(--yongkang-dark); }
+.bg-qingtian { background: var(--qingtian-green); }
+.bg-qingtian-dark { background: var(--qingtian-dark); }
+.bg-longquan { background: var(--longquan-red); }
+.bg-longquan-dark { background: var(--longquan-dark); }
+.text-dark { color: #333 !important; }
+
+/* --- District Section (卡片) --- */
+.district-section {
+    background: white;
+    margin: 15px 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.district-header {
+    padding: 12px 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-body { padding: 15px; }
+
+.sub-title {
+    margin: 0 0 10px 0;
+    padding-left: 8px;
+}
+
+.border-longquan { border-left: 4px solid var(--longquan-dark); }
+
+.divider {
+    border: 0;
+    border-top: 1px dashed #ddd;
+    margin: 15px 0;
+}
+
+/* --- 列表項目 (List Items) --- */
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+.list-item:last-child { border-bottom: none; }
+
+.item-info h4 { margin: 0 0 5px 0; font-size: 1rem; }
+.item-info p { margin: 0; font-size: 0.85rem; color: #666; }
+.tag {
+    font-size: 0.7rem; padding: 2px 6px; 
+    border-radius: 4px; background: #eee; margin-right: 5px;
+}
+
+/* 按鈕樣式 */
+.btn-action {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* 停用/已領完按鈕樣式 */
+.btn-disabled {
+    background: #ccc !important;
+    cursor: not-allowed;
+    color: #666;
+}
+
+.disabled-item { opacity: 0.7; }
+
+.btn-footer {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background: #f8f9fa;
+    border: none;
+    border-top: 1px solid #eee;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- 龍泉市場狀態 --- */
+.market-status-box {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.market-status-box p { margin: 5px 0 0 0; font-size: 0.85rem; }
+
+.closed-list {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.closed-tag {
+    background: rgba(0,0,0,0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* --- 底部導航 (Bottom Nav) --- */
+.bottom-nav {
+    position: fixed; bottom: 0; width: 100%;
+    background: white; border-top: 1px solid #ddd;
+    display: flex; justify-content: space-around;
+    padding: 10px 0; z-index: 200;
+}
+
+.nav-item {
+    text-align: center; font-size: 0.7rem; 
+    color: #888; cursor: pointer;
+}
+
+.nav-item div { font-size: 1.2rem; margin-bottom: 2px; }
+.nav-item.active { color: var(--qingtian-green); font-weight: bold; }
+.nav-item a { text-decoration: none; color: inherit; display: block; }
+
+/* --- 彈出視窗 (Modal) --- */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 300;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.modal-content {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: slideUp 0.3s ease-out;
+    position: relative;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+.modal-title { margin-top: 0; text-align: center; }
+
+.close-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--dark-text);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* 貼心服務 Grid */
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.service-btn {
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.service-btn:active { background: #e2e6ea; }
+.service-icon { font-size: 2rem; display: block; margin-bottom: 5px; }
+
+/* 會員卡片 */
+.member-card { text-align: center; padding: 10px; }
+
+.member-avatar {
+    width: 80px; height: 80px;
+    background: #eee;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem;
+}
+
+.member-name { margin: 10px 0; }
+.member-level { color: #888; font-size: 0.9rem; }
+
+.member-qr img {
+    width: 200px; height: 200px;
+    margin: 15px auto;
+    display: block;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.member-note { font-size: 0.8rem; color: #aaa; }
